@@ -46,3 +46,31 @@ void Name_pairs::sort_names_abc() {
     names = sorted_names;
     ages = sorted_ages;
 }
+
+std::ostream& operator<<(std::ostream& os, Name_pairs& pair){
+    int i=0;
+    for(std::string n:pair.names){
+        os<<"Name: "<<n<<"      Age:"<<pair.ages[i]<<std::endl;
+        i++;
+    }
+    return os;
+}
+
+bool Name_pairs::operator ==(Name_pairs& other){
+    if(names==other.names && ages==other.ages){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+bool Name_pairs::operator !=(Name_pairs& other){
+    if(names==other.names && ages==other.ages){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
