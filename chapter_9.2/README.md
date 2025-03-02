@@ -28,8 +28,6 @@ This C++ program allows you to enter a list of names and ages, and then sort the
 - `Name_pairs.cpp`: Implementation file for the `Name_pairs` class methods.
 - `main.cpp`: Main program for interacting with the user and running the logic.
 
-## License
 
-This project is open-source and available under the MIT License.
 
 
