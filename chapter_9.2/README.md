@@ -9,19 +9,6 @@ This C++ program allows you to enter a list of names and ages, and then sort the
 - **Compare pairs**: You can create two sets of name-age pairs and compare them using `==` and `!=` operators.
 - **Output**: The program supports the use of the `<<` operator for displaying the names and ages in a formatted manner.
 
-## How to Run
-
-1. Clone this repository to your local machine.
-2. Compile the program using a C++ compiler (e.g., `g++`):
-    ```bash
-    g++ -o NamePairs main.cpp Name_pairs.cpp
-    ```
-3. Run the program:
-    ```bash
-    ./NamePairs
-    ```
-4. Follow the prompts to enter names and ages, and view the sorted list of names and ages.
-
 ## Files Included
 
 - `Name_pairs.h`: Header file defining the `Name_pairs` class.
