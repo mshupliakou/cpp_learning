@@ -1,9 +1,9 @@
-# C++ Learning Repository
+# C++ Learning Repository || STILL WORKING ON THIS 
 
-This repository contains solutions to various exercises from a C++ book(Stroustrup). The purpose of this project is to prepare for my C++ exam by organizing tasks into separate folders based on different topics.
+This repository contains solutions to various C++ exercises . From different C++ books (Stroustrup). The purpose of this project is to prepare for my C++ exam by organizing tasks into separate folders based on different topics.
 
 ## Structure
-Each folder represents a specific exercise or topic covered in the book. The structure is as follows:
+Each folder represents a specific exercise or topic. The structure is as follows:
 ```
 cpp_learning/
 │-- Chapter_01/
