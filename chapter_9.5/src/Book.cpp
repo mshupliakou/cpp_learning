@@ -20,6 +20,9 @@ int Book::getRegistration(){
 bool Book::getIs_handed(){
     return is_handed;
 }
+void Book::setIs_handed(bool value){
+    is_handed=value;
+}
 
 std::vector<std::string> split(const std::string& str, char delimiter) {
     std::vector<std::string> tokens;

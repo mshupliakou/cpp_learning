@@ -38,6 +38,7 @@ std::string getBook_name();
 std::string getAuthor();
 int getRegistration();
 bool getIs_handed();
+void setIs_handed(bool value);
 Genre getGenre();
 
 //overloading == operator. checks if two books have the same isbn
