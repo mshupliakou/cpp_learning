@@ -4,6 +4,9 @@
 #include <typeinfo>
 #include <vector>
 #include <sstream>
+enum Genre{
+    fantasy, prose, periodical, biografy, for_children
+};
 
 /// @brief describes a book
 class Book{
@@ -12,6 +15,8 @@ std::string book_name;
 std::string author_last_name;
 int registration; // year of registration 
 bool is_handed; // is this book in a library right now or not 
+Genre genre;
+
 public:
 /// @brief function helps to devide a string into parts
 /// @param str 
@@ -26,13 +31,14 @@ friend std::vector<std::string> split(const std::string& str, char delimiter);
 /// @param registration 
 /// @param is_handed 
 Book(std::string isbn, std::string book_name, 
-std::string author_last_name, int registration, bool is_handed);
+std::string author_last_name, int registration, bool is_handed, Genre genre);
 
 std::string getISBN();
 std::string getBook_name();
 std::string getAuthor();
 int getRegistration();
 bool getIs_handed();
+Genre getGenre();
 
 //overloading == operator. checks if two books have the same isbn
 bool operator==(const Book &other);

@@ -32,9 +32,9 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 }
 
 Book::Book(std::string isbn, std::string book_name, 
-std::string author_last_name, int registration, bool is_handed)
+std::string author_last_name, int registration, bool is_handed, Genre genre)
 : isbn(isbn), book_name(book_name), author_last_name(author_last_name), 
-registration(registration), is_handed(is_handed) {
+registration(registration), is_handed(is_handed), genre(genre) {
     //checking out if the isbn is well written and has the right length
     // the right format :n-n-n-x. n(int), x(string)
     {
@@ -86,5 +86,9 @@ std::ostream& operator<<(std::ostream&os, const Book &book){
     os<<"[Author]: "<<book.author_last_name<<std::endl;
     os<<" [Book]: "<<book.book_name<<std::endl<<" [ISBN]: "<<book.isbn<<std::endl;
     return os;
+}
+
+Genre Book:: getGenre(){
+    return genre;
 }
 
