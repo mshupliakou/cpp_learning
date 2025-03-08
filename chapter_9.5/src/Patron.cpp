@@ -30,7 +30,7 @@ void Patron:: handBook(Book book){
             book.getISBN()<<std::endl;
         }
         else{
-            std::cout<<user<<" with an id: "<<id_card<<" can not take a book "
+            std::cout<<"[ERROR]: book is handed already. "<<user<<" with an id: "<<id_card<<" can not take a book "
             <<book.getBook_name()<<"with an ISBN: "<<
             book.getISBN()<<std::endl;
         }

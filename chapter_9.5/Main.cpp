@@ -2,6 +2,7 @@
 #include "Book.h"
 #include "Patron.h"
 #include "Library.h"
+#include "Chrono.h"
 
 int main(){ 
     Library library;
@@ -16,18 +17,23 @@ int main(){
     Book book5("1345-56-6-23", "English for kids", "Anastasia Green", 2003, true, for_children);
     library.addBook(book5);
 
-    Patron patron("Tom Gordon", 5678, 15, false);
-    patron.setFees(20);
-    library.addPatron(patron);
-    
-    patron.handBook(book3);
-    patron.handBook(book1);
-    patron.handBook(book4);
-    patron.handBook(book5);
-    patron.print();
-    patron.returnBook(book3);
-    patron.print();
+    Patron patron1("Tom Gordon", 5678, 15, false);
+    Patron patron2("Anastasia Fedko", 1000, 15, true);
+    Patron patron3("Alesia Kol", 1001, 20, false);
+    Patron patron4("Martyna Gordon", 5678, 15, true);
 
+    library.addPatron(patron1);
+    library.addPatron(patron2);
+    library.addPatron(patron3);
+    library.addPatron(patron4);
+
+    library.borowing_a_book(patron1, book1, Chrono::Date(2025, Chrono::Month::mar, 8), library);
+    library.borowing_a_book(patron2, book3, Chrono::Date(2025, Chrono::Month::mar, 8), library);
+    library.borowing_a_book(patron2, book4, Chrono::Date(2025, Chrono::Month::mar, 8), library);
+
+    std::cout<<"Debtors: "<<std::endl;
+    library.print_patrons(library.debtors(library));
+    library.print_transactions();
 
 
     return 0;

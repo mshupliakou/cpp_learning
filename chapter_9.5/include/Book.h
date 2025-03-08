@@ -4,6 +4,7 @@
 #include <typeinfo>
 #include <vector>
 #include <sstream>
+
 enum Genre{
     fantasy, prose, periodical, biografy, for_children
 };
@@ -32,7 +33,9 @@ friend std::vector<std::string> split(const std::string& str, char delimiter);
 /// @param is_handed 
 Book(std::string isbn, std::string book_name, 
 std::string author_last_name, int registration, bool is_handed, Genre genre);
-
+Book():isbn("1-1-1-1"), book_name("no_name"), author_last_name("no_name"), registration(0),
+ is_handed(false), genre(prose){}
+ 
 std::string getISBN();
 std::string getBook_name();
 std::string getAuthor();

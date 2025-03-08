@@ -14,6 +14,7 @@ class Patron{
     public:
     Patron(std::string user, int id_card, double fees, bool fees_paid):user(user), id_card(id_card), fees(fees),
     fees_paid(fees_paid){}
+    Patron():user("no_name"), id_card(0), fees(0), fees_paid(true){}
     std::string getUser() const;
     int getIDcard() const;
     double getFees() const;
