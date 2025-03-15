@@ -1,21 +1,24 @@
-# Class Rational
+# Function Composition in C++
 
-This C++ program provides a rational number management system that allows users to perform arithmetic operations on fractions. It includes various functionalities such as addition, subtraction, multiplication, division, and simplification of rational numbers.
+This project provides an implementation of function composition in C++, allowing users to combine multiple mathematical functions and apply them sequentially to input values.
 
-## Features
-- **Rational Number Representation**: Handles fractions using numerator and denominator.
-- **Arithmetic Operations**: Supports addition, subtraction, multiplication, and division of rational numbers.
-- **Operator Overloading**: Implements operators such as +, -, *, /, ++, and = for intuitive usage.
-- **Type Conversion**: Allows conversion to double and explicit conversion to int.
-- **Simplification**: Provides a method to reduce fractions to their simplest form.
-- **Comparison Support**: Includes == operator for equality checking.
+# Features
 
-## Files Included
+- **Function Composition**: Supports sequential application of functions.
+- **Mathematical Function Classes**: Includes predefined functions like sine, square root, and linear transformations.
+- **Operator Overloading**: Enables function objects to be called like regular functions.
+- **Dynamic Function Insertion**: Users can add functions to the composition dynamically.
+- **Intermediate Results Access**: Stores intermediate results and allows indexed retrieval.
 
-*Header Files*:
-- `Rational.h`: Defines the Rational class, handling rational number operations and conversions.
+# Files Included
+
+Header Files:
+`Functions.h`: Defines mathematical function classes (Sinus, SquareRoot, Linear).
+`FunctionComposition.h`: Implements function composition with insertion, execution, and result storage.
 
 
-*Source Files*:
-- `Rational.cpp`: Implements methods of the Rational class.
-- `Main.cpp`: Main program for testing and demonstrating rational number operations.
+Source Files:
+
+`Functions.cpp`: Implements methods for mathematical function classes.
+`FunctionComposition.cpp`: Implements methods for function composition.
+`Main.cpp`: Demonstrates function composition in action.
